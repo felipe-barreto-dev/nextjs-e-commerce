@@ -33,7 +33,6 @@ export default async function Search({ searchParams }: SearchProps) {
 
   const products = await searchProducts(query);
 
-  await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm">
